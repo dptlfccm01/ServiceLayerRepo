@@ -13,6 +13,7 @@ public class MainTransactionManager implements TransactionManager{
 	public MainTransactionManager(){
 		
 		//only temporary, but we should not have this:
+		System.out.println("OUT> MainTransactionManager is being run");
 		transactionDao = new TransactionDao();
 		
 	}
