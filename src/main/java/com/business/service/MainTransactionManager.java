@@ -26,6 +26,10 @@ public class MainTransactionManager implements TransactionManager{
 		transactionDao.addTransaction(transaction);
 	}
 	
+	public double getBalance(){
+		return transactionDao.getBalance();
+	}
+	
 	public TransactionDao getTransactionDao(){
 		return transactionDao;
 	}
